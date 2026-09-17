@@ -60,3 +60,10 @@ git push origin main
 ## Contact-link update in v6.1
 - Email: `mailto:ParissaAlavi@gmail.com`
 - GitLab / TAMAAS: `https://gitlab.com/parissa_al/tamaas`
+
+
+## Email fix in v6.2
+The contact Email button now opens a Gmail compose window directly:
+`https://mail.google.com/mail/?view=cm&fs=1&to=ParissaAlavi@gmail.com`
+
+A `Copy email` fallback button is also included.
