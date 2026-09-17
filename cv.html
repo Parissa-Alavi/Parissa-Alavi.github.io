@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parissa Alavi | CV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background: #0b1020;
+      }
+
+      .cv-page {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+
+      .cv-document {
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 25px 80px rgba(15, 23, 42, 0.3);
+      }
+
+      h1, h2, h3, p, li {
+        color: var(--text, #e5edf7);
+      }
+
+      .cv-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: end;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+        padding-bottom: 20px;
+        margin-bottom: 28px;
+      }
+
+      .cv-header h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      .cv-meta {
+        color: var(--muted, #b7c5d9);
+        text-align: right;
+      }
+
+      .cv-section {
+        margin-bottom: 28px;
+      }
+
+      .cv-section h2 {
+        margin: 0 0 14px;
+        font-size: 1.2rem;
+        color: var(--accent, #8ad8d9);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .cv-entry {
+        margin-bottom: 18px;
+      }
+
+      .cv-entry h3 {
+        margin: 0 0 4px;
+        font-size: 1.06rem;
+      }
+
+      .cv-role {
+        color: var(--muted, #b7c5d9);
+        margin: 0 0 8px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .download-bar {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 640px) {
+        .cv-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .cv-meta {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-page">
+      <div class="cv-document">
+        <header class="cv-header">
+          <div>
+            <h1>Parissa Alavi</h1>
+          </div>
+          <div class="cv-meta">
+            <p>Computational Mechanics · Materials · Scientific Computing</p>
+            <p>your.email@example.com</p>
+            <p>linkedin.com/in/yourprofile</p>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2>Profile</h2>
+          <p>
+            Researcher and engineer focused on computational mechanics, materials modelling, and
+            scientific computing. I work at the interface of numerical simulation, physics-based
+            modelling, and engineering design to study complex systems and improve predictive
+            understanding of material behaviour.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h2>Research interests</h2>
+          <ul>
+            <li>Computational mechanics</li>
+            <li>Finite element and contact simulations</li>
+            <li>Tribology and industrial materials systems</li>
+            <li>Multiscale and microstructure modelling</li>
+            <li>Scientific computing and simulation workflows</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2>Education</h2>
+          <div class="cv-entry">
+            <h3>PhD in Mechanical/Materials Engineering</h3>
+            <p class="cv-role">Institution name · Year</p>
+            <p>Thesis topic placeholder: computational modelling of materials and mechanics.</p>
+          </div>
+          <div class="cv-entry">
+            <h3>MSc / BSc in Engineering or Applied Science</h3>
+            <p class="cv-role">Institution name · Year</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Selected experience</h2>
+          <div class="cv-entry">
+            <h3>Research Engineer / Graduate Researcher</h3>
+            <p class="cv-role">Organization · Year</p>
+            <ul>
+              <li>Developed numerical models for mechanics, materials, and interface behaviour.</li>
+              <li>Worked with simulation workflows spanning FEM, scientific computing, and analysis.</li>
+              <li>Collaborated on predictive modelling and assessment of materials systems.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Technical skills</h2>
+          <ul>
+            <li>Python, C++, MATLAB</li>
+            <li>FEM, BEM, DEM</li>
+            <li>Abaqus, COMSOL</li>
+            <li>Scientific computing, data analysis, numerical methods</li>
+          </ul>
+        </section>
+
+        <div class="download-bar">
+          <a class="button primary" href="index.html">Back to portfolio</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
