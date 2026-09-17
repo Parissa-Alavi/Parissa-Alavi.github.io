@@ -96,3 +96,7 @@ The first project uses two browser video sources:
 with `assets/wear_particles_poster.webp` as the poster image.
 
 When updating media, keep the filenames or update the corresponding paths in `index.html`.
+
+- `assets/microstructure_modeling.webp` — FE–cellular automata–neural network project preview.
+
+- `assets/parissa-portrait.webp` — hero portrait image.
