@@ -515,3 +515,57 @@ img {
   margin-right: auto;
   text-align: center;
 }
+
+
+/* Project figures upgraded from abstract gradients to real research visuals */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-figure {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.project-figure.figure-light {
+  background: #f2f5f9;
+}
+
+.project-figure.figure-dark {
+  background: #020617;
+}
+
+.project-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.project-link {
+  width: fit-content;
+  margin-top: 0.8rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.project-link.subtle {
+  color: var(--muted);
+}
+
+.project-link.subtle:hover,
+.project-link.subtle:focus-visible {
+  color: var(--text);
+}

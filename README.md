@@ -79,3 +79,7 @@ GitHub Pages will deploy the new version after the push.
 ## CV
 
 The current site uses `cv.html` as the CV page. It includes a **Print / Save as PDF** button, so the browser can generate a PDF without storing a second CV file in the repository.
+
+
+## Project figures
+The portfolio now uses real research figures stored in `assets/` rather than abstract CSS placeholders. If you want to replace a project thumbnail, copy a new PNG/JPG into `assets/` and update the corresponding `<img src="assets/...">` path in `index.html`.
