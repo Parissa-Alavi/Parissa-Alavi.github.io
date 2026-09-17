@@ -569,3 +569,56 @@ img {
 .project-link.subtle:focus-visible {
   color: var(--text);
 }
+
+
+/* Browser-native media for project cards */
+.project-figure {
+  position: relative;
+  min-height: 240px;
+}
+
+.project-figure img,
+.project-figure video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.project-figure img {
+  object-fit: contain;
+}
+
+.project-figure.figure-light {
+  background: #ffffff;
+}
+
+.project-figure.figure-light img {
+  padding: 8px;
+}
+
+.project-figure.figure-video {
+  background: #020617;
+}
+
+.project-figure.figure-video video {
+  object-fit: cover;
+  background: #020617;
+}
+
+.project-card:nth-child(5) .project-figure img {
+  object-fit: cover;
+  background: #000;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .project-figure {
+    height: 260px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-figure {
+    height: 220px;
+  }
+}

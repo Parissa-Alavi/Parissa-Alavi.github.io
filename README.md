@@ -83,3 +83,16 @@ The current site uses `cv.html` as the CV page. It includes a **Print / Save as 
 
 ## Project figures
 The portfolio now uses real research figures stored in `assets/` rather than abstract CSS placeholders. If you want to replace a project thumbnail, copy a new PNG/JPG into `assets/` and update the corresponding `<img src="assets/...">` path in `index.html`.
+
+
+## Web media
+
+Project-card previews are stored as WebP images for GitHub Pages/browser compatibility.
+The first project uses two browser video sources:
+
+- `assets/wear_particles_simulation.webm`
+- `assets/wear_particles_simulation.mp4`
+
+with `assets/wear_particles_poster.webp` as the poster image.
+
+When updating media, keep the filenames or update the corresponding paths in `index.html`.
