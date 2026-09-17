@@ -1,18 +1,32 @@
-# Parissa Alavi Portfolio Site
+# Parissa Alavi — GitHub Pages Portfolio (v6)
 
-This repository contains my personal research and engineering portfolio, built as a lightweight static website for GitHub Pages.
+A responsive static portfolio for GitHub Pages, focused on computational mechanics,
+materials modelling, scientific computing, and industrial R&D.
 
-## Files
+## Key improvements in v6
 
-- `index.html` — homepage and portfolio
-- `styles.css` — styling and responsive layout
-- `script.js` — mobile navigation and automatic copyright year
-- `cv.html` — web version of the CV, with print / Save as PDF support
-- `LICENSE` — repository license
+- Cleaned and consolidated CSS
+- Reordered flagship projects
+- Added project impact statements
+- Added Education & Teaching section
+- Highlighted EPFL thesis distinction
+- Added favicon and Open Graph / social-sharing metadata
+- Added a real downloadable PDF CV
+- Updated LinkedIn URL
+- Improved mobile navigation, keyboard support, focus states, and reduced-motion behavior
+- Separated flagship projects from additional computational work
+
+## Main files
+
+- `index.html` — homepage
+- `styles.css` — cleaned responsive styles
+- `script.js` — navigation and accessibility behavior
+- `cv.html` — web CV
+- `assets/Parissa_Alavi_CV.pdf` — downloadable PDF CV
+- `assets/favicon.svg` — favicon
+- `assets/social-preview.jpg` — LinkedIn / social preview image
 
 ## Preview locally
-
-From the repository folder, run:
 
 ```bash
 python3 -m http.server 8000
@@ -20,85 +34,24 @@ python3 -m http.server 8000
 
 Then open:
 
-```text
-http://localhost:8000
-```
+`http://localhost:8000`
 
-You can also open `index.html` directly in a browser, but using a local server more closely matches the GitHub Pages environment.
+## Publish with GitHub Pages
 
-## Publish on GitHub Pages
+For GitHub user `Parissa-Alavi`, use the repository:
 
-The GitHub profile linked from the site is:
+`Parissa-Alavi.github.io`
 
-```text
-https://github.com/Parissa-Alavi
-```
+and publish from the `main` branch, `/ (root)`.
 
-For a personal GitHub Pages site, the repository should therefore be named:
+The site URL is:
 
-```text
-Parissa-Alavi.github.io
-```
+`https://parissa-alavi.github.io/`
 
-After pushing the site files to that repository, the public site URL will be:
-
-```text
-https://parissa-alavi.github.io/
-```
-
-If GitHub Pages is not enabled automatically, open the repository on GitHub and go to:
-
-**Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`**
-
-## Clone with SSH
+## Push an update
 
 ```bash
-git clone git@github.com:Parissa-Alavi/Parissa-Alavi.github.io.git
-cd Parissa-Alavi.github.io
-```
-
-## Edit and publish changes
-
-After modifying files locally:
-
-```bash
-git status
 git add .
-git commit -m "Update portfolio"
+git commit -m "Portfolio v6 cleanup and improvements"
 git push origin main
 ```
-
-GitHub Pages will deploy the new version after the push.
-
-## Main links used by the site
-
-- Email: `ParissaAlavi@gmail.com`
-- LinkedIn: `https://www.linkedin.com/in/parissaalavi/`
-- GitHub: `https://github.com/Parissa-Alavi`
-
-## CV
-
-The current site uses `cv.html` as the CV page. It includes a **Print / Save as PDF** button, so the browser can generate a PDF without storing a second CV file in the repository.
-
-
-## Project figures
-The portfolio now uses real research figures stored in `assets/` rather than abstract CSS placeholders. If you want to replace a project thumbnail, copy a new PNG/JPG into `assets/` and update the corresponding `<img src="assets/...">` path in `index.html`.
-
-
-## Web media
-
-Project-card previews are stored as WebP images for GitHub Pages/browser compatibility.
-The first project uses two browser video sources:
-
-- `assets/wear_particles_simulation.webm`
-- `assets/wear_particles_simulation.mp4`
-
-with `assets/wear_particles_poster.webp` as the poster image.
-
-When updating media, keep the filenames or update the corresponding paths in `index.html`.
-
-- `assets/microstructure_modeling.webp` — FE–cellular automata–neural network project preview.
-
-- `assets/parissa-portrait.webp` — hero portrait image.
-
-- `assets/microstructure_modeling.webp` now uses the comparison figure showing predicted vs. experimental microstructures for different rolling passes after annealing.

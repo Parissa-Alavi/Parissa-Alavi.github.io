@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Parissa Alavi, PhD | Computational Mechanics & Materials</title>
     <meta
       name="description"
-      content="Parissa Alavi, PhD — computational mechanics, materials modelling, tribology, and scientific computing."
+      content="Parissa Alavi, PhD — computational mechanics, materials modelling, tribology, scientific computing, and physics-based R&D."
     />
-    <title>Parissa Alavi, PhD | Computational Mechanics & Materials</title>
+    <meta name="theme-color" content="#08111d" />
+    <link rel="canonical" href="https://parissa-alavi.github.io/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Parissa Alavi, PhD | Computational Mechanics & Materials" />
+    <meta
+      property="og:description"
+      content="Physics-based simulation, multiscale mechanics, computational materials, and scientific software."
+    />
+    <meta property="og:url" content="https://parissa-alavi.github.io/" />
+    <meta property="og:image" content="https://parissa-alavi.github.io/assets/social-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Parissa Alavi, PhD — Computational Mechanics and Materials Modelling" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Parissa Alavi, PhD | Computational Mechanics & Materials" />
+    <meta
+      name="twitter:description"
+      content="Physics-based simulation, multiscale mechanics, computational materials, and scientific software."
+    />
+    <meta name="twitter:image" content="https://parissa-alavi.github.io/assets/social-preview.jpg" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,26 +41,58 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Parissa Alavi",
+      "honorificSuffix": "PhD",
+      "url": "https://parissa-alavi.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/parissa-alavi-0193b795/",
+        "https://github.com/Parissa-Alavi"
+      ],
+      "jobTitle": "Mechanical & Materials Engineer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "EPFL"
+      }
+    }
+    </script>
   </head>
+
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="#home" class="brand">Parissa Alavi</a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
+        <a href="#home" class="brand" aria-label="Parissa Alavi homepage">Parissa Alavi</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
-        <nav class="site-nav">
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Education</a>
           <a href="#publications">Publications</a>
           <a href="#skills">Skills</a>
-          <a href="#cv">CV</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section id="home" class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
@@ -43,35 +100,44 @@
             <h1>Parissa Alavi</h1>
             <h2>Computational Mechanics · Materials Modelling · Scientific Computing</h2>
             <p class="lead">
-              I develop physics-based numerical models and scientific software for complex engineering
-              systems, with a focus on contact mechanics, tribology, metal forming, multiscale modelling,
-              and computational materials science.
+              I develop physics-based simulation tools that connect mechanics, materials, experiments,
+              and data — from microstructure evolution to industrial metal-forming processes.
             </p>
+
             <div class="cta-group">
               <a class="button primary" href="#projects">View projects</a>
-              <a class="button secondary" href="cv.html">View CV</a>
+              <a class="button secondary" href="assets/Parissa_Alavi_CV.pdf" download>Download CV</a>
+              <a class="text-action" href="cv.html">View web CV <span aria-hidden="true">↗</span></a>
             </div>
+
             <ul class="mini-meta" aria-label="Research focus areas">
               <li>FEM · BEM · DEM</li>
               <li>Tribology & contact mechanics</li>
-              <li>Multiscale materials modelling</li>
+              <li>Computational materials</li>
               <li>Python & C++</li>
             </ul>
           </div>
 
-          <div class="hero-card" aria-label="Profile summary card">
+          <aside class="hero-card" aria-label="Professional profile summary">
             <div class="profile-badge">Advanced R&D · Scientific Computing</div>
             <div class="portrait-frame">
-              <img src="assets/parissa-portrait.webp" alt="Portrait of Parissa Alavi" loading="eager" />
+              <img
+                src="assets/parissa-portrait.webp"
+                alt="Parissa Alavi"
+                width="320"
+                height="400"
+                fetchpriority="high"
+              />
             </div>
             <div class="card-content">
               <h3>From physics to predictive tools</h3>
               <p>
-                My work connects physical modelling, custom numerical methods, experiments, and industrial
-                engineering needs. My PhD at EPFL was conducted in collaboration with Novelis Switzerland.
+                My work connects physical modelling, custom numerical methods, experiments,
+                and industrial engineering needs. My PhD at EPFL was conducted in collaboration
+                with Novelis Switzerland.
               </p>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
@@ -81,35 +147,46 @@
             <p class="eyebrow">About</p>
             <h2>Mechanics, materials, and code in the same workflow</h2>
           </div>
+
           <div class="about-grid">
-            <div>
+            <div class="about-copy">
               <p>
-                I am a mechanical and materials engineer with a PhD from EPFL. My research has focused on
-                building predictive computational models for nonlinear, multiscale, and history-dependent
-                physical systems.
+                I am a mechanical and materials engineer with a PhD from EPFL. My research focuses on
+                predictive computational models for nonlinear, multiscale, and history-dependent physical systems.
               </p>
               <p>
                 During my doctoral work with Novelis Switzerland, I developed and validated multiscale
                 models for friction, lubrication, surface evolution, and third-body wear in aluminium
                 sheet-metal forming. I combined Boundary Element, Discrete Element, and Finite Element
-                approaches with experimental surface data and custom scientific software.
+                methods with experimental surface data and custom scientific software.
               </p>
               <p>
-                My earlier work in computational materials science combined finite elements, cellular
-                automata, and neural-network surrogates to model microstructure evolution in stainless steel.
-                I am particularly interested in advanced modelling, scientific software, and AI-assisted
-                engineering workflows.
+                My earlier computational-materials work combined finite elements, cellular automata,
+                and neural networks to predict microstructure evolution in stainless steel. I am especially
+                interested in advanced modelling, scientific software, and AI-assisted engineering workflows.
               </p>
             </div>
-            <div class="info-panel">
+
+            <aside class="info-panel">
               <h3>Profile snapshot</h3>
               <ul>
                 <li>PhD in Mechanical Engineering, EPFL</li>
                 <li>4-year industrial R&D collaboration with Novelis Switzerland</li>
-                <li>Thesis ranked in the top 8% and nominated for the EPFL Best Thesis Award</li>
                 <li>Based in Lausanne, Switzerland</li>
                 <li>English C1/C2 · French B2 · German A2 · Persian native</li>
               </ul>
+            </aside>
+          </div>
+
+          <div class="achievement-card" aria-label="Doctoral thesis distinction">
+            <div class="achievement-icon" aria-hidden="true">✦</div>
+            <div>
+              <p class="achievement-kicker">Doctoral distinction</p>
+              <h3>Thesis ranked in the top 8% and nominated for the EPFL Best Thesis Award</h3>
+              <p>
+                Doctoral research developed in close industrial collaboration with Novelis Switzerland,
+                bridging rough-contact physics, numerical methods, and manufacturing applications.
+              </p>
             </div>
           </div>
         </div>
@@ -117,15 +194,22 @@
 
       <section id="projects" class="section alt">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Selected research and engineering work</h2>
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h2>Selected research and engineering work</h2>
+            </div>
+            <p>
+              Flagship projects spanning multiscale tribology, computational materials,
+              numerical methods, and scientific software.
+            </p>
           </div>
 
           <div class="project-grid">
             <article class="project-card">
               <div class="project-figure figure-video">
                 <video
+                  class="project-video"
                   autoplay
                   muted
                   loop
@@ -144,24 +228,29 @@
                 <div class="project-tag">Tribology · Multiscale Mechanics</div>
                 <h3>Multiscale friction with third-body wear particles</h3>
                 <p>
-                  Developed a predictive framework for friction in industrial sheet-metal forming by linking
-                  rough-contact mechanics and wear-particle dynamics to the macroscopic forming process.
+                  Developed a predictive framework for friction in industrial sheet-metal forming by
+                  linking rough-contact mechanics and wear-particle dynamics to the macroscopic forming process.
                 </p>
                 <ul>
                   <li>Coupled BEM–DEM–FEM modelling</li>
                   <li>Third-body particle generation and transport</li>
                   <li>Industrial validation with Novelis Switzerland</li>
                 </ul>
+                <p class="impact"><strong>Impact:</strong> Connected microscale wear-particle mechanisms to macroscopic friction trends in an industrial forming context.</p>
                 <div class="project-actions">
-                  <a class="project-link" href="https://doi.org/10.1016/j.wear.2026.206719" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
-                  <a class="project-link subtle" href="assets/wear_particles_simulation.mp4" target="_blank" rel="noopener noreferrer">Open video ↗</a>
+                  <a class="project-link" href="https://doi.org/10.1016/j.wear.2026.206719" target="_blank" rel="noopener noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+                  <a class="project-link subtle" href="assets/wear_particles_simulation.mp4" target="_blank" rel="noopener noreferrer">Open video <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
 
             <article class="project-card">
               <div class="project-figure figure-light">
-                <img src="assets/contact_types.webp" alt="Schematic showing lubricated contact, free lubricant, dry contact, and trapped pocket regimes" loading="lazy" />
+                <img
+                  src="assets/contact_types.webp"
+                  alt="Schematic of lubricated contact, free lubricant, dry contact, and trapped lubricant pockets"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <div class="project-tag">Contact Mechanics · Lubrication</div>
@@ -175,16 +264,51 @@
                   <li>Compressible liquid pockets</li>
                   <li>Plastic rough-surface response</li>
                 </ul>
+                <p class="impact"><strong>Impact:</strong> Provided a mechanistic explanation for lubricant- and pressure-dependent friction in rough metallic contacts.</p>
                 <div class="project-actions">
-                  <a class="project-link" href="https://doi.org/10.1016/j.triboint.2025.111142" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
-                  <a class="project-link subtle" href="assets/Contact_types_kinematic.pdf" target="_blank" rel="noopener noreferrer">Open figure ↗</a>
+                  <a class="project-link" href="https://doi.org/10.1016/j.triboint.2025.111142" target="_blank" rel="noopener noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+                  <a class="project-link subtle" href="assets/Contact_types_kinematic.pdf" target="_blank" rel="noopener noreferrer">Open figure <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-figure figure-light microstructure-figure">
+                <img
+                  src="assets/microstructure_modeling.webp"
+                  alt="Predicted and experimental 304L stainless-steel microstructures after annealing for different rolling conditions"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-tag">Computational Materials · Neural Networks</div>
+                <h3>FE–Cellular Automata–Neural Network Microstructure Modelling</h3>
+                <p>
+                  Developed a coupled framework for cold-rolled 304L stainless steel linking finite-element
+                  deformation fields, cellular automata, and a neural network to predict martensite reversion,
+                  recrystallization, and evolving microstructure during non-isothermal annealing.
+                </p>
+                <ul>
+                  <li>Abaqus/Explicit thermo-mechanical rolling simulation</li>
+                  <li>Cellular automata for recrystallization and grain evolution</li>
+                  <li>Neural network for martensite-reversion prediction</li>
+                  <li>Experimental validation using XRD, Feritscope, metallography, hardness and tensile data</li>
+                </ul>
+                <p class="impact"><strong>Impact:</strong> Combined physics-based and data-driven models in one validated framework for phase transformation and grain evolution.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://doi.org/10.1007/s41939-020-00072-4" target="_blank" rel="noopener noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+                  <a class="project-link subtle" href="assets/microstructure_modeling.webp" target="_blank" rel="noopener noreferrer">Open figure <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
 
             <article class="project-card">
               <div class="project-figure figure-light">
-                <img src="assets/experimental_vs_simulation_surface.webp" alt="Comparison of initial configuration, experimental surface after sliding, and simulation result after sliding" loading="lazy" />
+                <img
+                  src="assets/experimental_vs_simulation_surface.webp"
+                  alt="Initial rough surface compared with experimental and simulated surfaces after sliding"
+                  loading="lazy"
+                />
               </div>
               <div class="project-body">
                 <div class="project-tag">Numerical Methods · Surface Evolution</div>
@@ -198,149 +322,182 @@
                   <li>Saturation-based plasticity</li>
                   <li>Experiment–simulation comparison</li>
                 </ul>
+                <p class="impact"><strong>Impact:</strong> Enabled rough-surface evolution to retain plastic deformation history and reproduce measured topographic trends.</p>
                 <div class="project-actions">
-                  <a class="project-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5761260" target="_blank" rel="noopener noreferrer">View preprint ↗</a>
-                  <a class="project-link subtle" href="assets/comparision_exp_surf.pdf" target="_blank" rel="noopener noreferrer">Open figure ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-figure figure-light">
-                <img src="assets/gap_mu_ke_evolution.webp" alt="Plot panels showing evolution of normalized friction versus sliding distance and pressure-dependent critical conditions" loading="lazy" />
-              </div>
-              <div class="project-body">
-                <div class="project-tag">Contact Response · Parametric Maps</div>
-                <h3>Parametric friction and gap evolution maps</h3>
-                <p>
-                  Quantified how roughness contrast, critical pressure and sliding distance govern normalized
-                  gap and friction evolution, helping interpret transitions between contact regimes.
-                </p>
-                <ul>
-                  <li>Pressure-dependent regime transitions</li>
-                  <li>Gap and friction metrics</li>
-                  <li>Compact visual summaries for model interpretation</li>
-                </ul>
-                <div class="project-actions">
-                  <a class="project-link" href="https://doi.org/10.1016/j.triboint.2025.111142" target="_blank" rel="noopener noreferrer">Related paper ↗</a>
-                  <a class="project-link subtle" href="assets/Gap_muKE_evolution_ratio_colorbar.pdf" target="_blank" rel="noopener noreferrer">Open figure ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-figure figure-light">
-                <img src="assets/microstructure_modeling.webp" alt="Experimental microstructure compared with cellular automata microstructure simulation for 304L stainless steel" loading="lazy" />
-              </div>
-              <div class="project-body">
-                <div class="project-tag">Computational Materials · Neural Networks</div>
-                <h3>FE–Cellular Automata–Neural Network Microstructure Modelling</h3>
-                <p>
-                  Developed a coupled framework for cold-rolled 304L stainless steel that linked finite-element
-                  deformation fields, cellular automata, and a neural network to predict martensite reversion,
-                  recrystallization, and evolving microstructure during non-isothermal annealing.
-                </p>
-                <ul>
-                  <li>Abaqus/Explicit thermo-mechanical rolling simulation</li>
-                  <li>Cellular automata for recrystallization and grain evolution</li>
-                  <li>Neural network for martensite-reversion prediction</li>
-                  <li>Validated with XRD, Feritscope, metallography, hardness and tensile data</li>
-                </ul>
-                <div class="project-actions">
-                  <a class="project-link" href="https://doi.org/10.1007/s41939-020-00072-4" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
-                  <a class="project-link subtle" href="assets/microstructure_modeling.webp" target="_blank" rel="noopener noreferrer">Open figure ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-figure figure-light">
-                <img src="assets/surface_contact_3d.webp" alt="Comparative deformation map showing normalized roughness evolution across different conditions" loading="lazy" />
-              </div>
-              <div class="project-body">
-                <div class="project-tag">Scientific Computing · Quantitative Analysis</div>
-                <h3>Quantitative model comparison and post-processing</h3>
-                <p>
-                  Built reusable analysis and visualization workflows to compare simulation outputs, summarize
-                  trends, and convert dense mechanical results into interpretable engineering figures.
-                </p>
-                <ul>
-                  <li>Python-based post-processing</li>
-                  <li>Parameter sweeps and trend visualization</li>
-                  <li>Research-grade plotting for technical communication</li>
-                </ul>
-                <div class="project-actions">
-                  <a class="project-link subtle" href="assets/comp_Def_evolution_logmapped_colorbar.pdf" target="_blank" rel="noopener noreferrer">Open figure ↗</a>
+                  <a class="project-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5761260" target="_blank" rel="noopener noreferrer">View preprint <span aria-hidden="true">↗</span></a>
+                  <a class="project-link subtle" href="assets/comparision_exp_surf.pdf" target="_blank" rel="noopener noreferrer">Open figure <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
             </article>
           </div>
+
+          <div class="additional-work">
+            <div class="additional-heading">
+              <p class="eyebrow">Additional computational work</p>
+              <h3>Analysis, parameter studies, and model interpretation</h3>
+            </div>
+
+            <div class="compact-project-grid">
+              <article class="compact-project">
+                <div class="compact-media figure-light">
+                  <img
+                    src="assets/gap_mu_ke_evolution.webp"
+                    alt="Normalized friction evolution under different pressure and roughness conditions"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <p class="project-tag">Parametric Studies</p>
+                  <h4>Friction and gap evolution maps</h4>
+                  <p>Mapped how roughness contrast, critical pressure, and sliding distance govern contact-regime transitions.</p>
+                  <p class="impact"><strong>Impact:</strong> Turned large parameter sweeps into compact physical regime maps.</p>
+                  <a class="project-link subtle" href="assets/Gap_muKE_evolution_ratio_colorbar.pdf" target="_blank" rel="noopener noreferrer">Open figure <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+
+              <article class="compact-project">
+                <div class="compact-media quantitative-media">
+                  <img
+                    src="assets/surface_contact_3d.webp"
+                    alt="Three-dimensional rough-surface contact visualization used for simulation analysis"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <p class="project-tag">Scientific Computing · Validation</p>
+                  <h4>Simulation Data Analysis & Model Validation</h4>
+                  <p>Built reusable Python workflows for parameter sweeps, post-processing, comparison, and research-grade visualization.</p>
+                  <p class="impact"><strong>Impact:</strong> Converted dense simulation outputs into interpretable engineering evidence for validation and decision-making.</p>
+                  <a class="project-link subtle" href="assets/comp_Def_evolution_logmapped_colorbar.pdf" target="_blank" rel="noopener noreferrer">Open analysis figure <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="publications" class="section">
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="eyebrow">Education & teaching</p>
+              <h2>From metallurgy to computational mechanics</h2>
+            </div>
+            <p>
+              A materials-science foundation developed into multiscale mechanics,
+              scientific computing, and industrial R&D.
+            </p>
+          </div>
+
+          <div class="experience-grid">
+            <div class="timeline" aria-label="Education timeline">
+              <article class="timeline-item">
+                <span class="timeline-date">2021–2026</span>
+                <div>
+                  <h3>PhD in Mechanical Engineering</h3>
+                  <p class="timeline-place">EPFL · Lausanne, Switzerland</p>
+                  <p>Industrial research collaboration with Novelis Switzerland on multiscale friction, rough contact, lubrication, wear, and scientific computing.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <span class="timeline-date">2018–2020</span>
+                <div>
+                  <h3>M.Sc. in Materials Science & Engineering</h3>
+                  <p class="timeline-place">Sharif University of Technology</p>
+                  <p>Computational metallurgy, rolling, recrystallization, martensite reversion, cellular automata, finite elements, and neural networks.</p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <span class="timeline-date">2012–2017</span>
+                <div>
+                  <h3>B.Sc. in Materials Science & Engineering</h3>
+                  <p class="timeline-place">Amirkabir University of Technology</p>
+                  <p>Metallurgy, failure analysis, heat treatment, microstructure, and railway-component wear.</p>
+                </div>
+              </article>
+            </div>
+
+            <aside class="teaching-panel">
+              <p class="eyebrow">Teaching & supervision</p>
+              <h3>Engineering knowledge transfer</h3>
+              <ul>
+                <li>Teaching Assistant — Numerical Modeling of Solids and Structures / FEM</li>
+                <li>Teaching Assistant — Scientific Programming for Engineers</li>
+                <li>Supervised 4+ Master’s-level engineering semester projects</li>
+                <li>Supported students in numerical methods, continuum mechanics, scientific coding, and model interpretation</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section alt">
         <div class="container narrow">
           <div class="section-heading">
             <p class="eyebrow">Publications</p>
             <h2>Selected publications</h2>
           </div>
+
           <div class="publication-list">
-            <div class="publication-item">
+            <a class="publication-item" href="https://doi.org/10.1016/j.wear.2026.206719" target="_blank" rel="noopener noreferrer">
               <span class="year">2026</span>
               <div>
                 <h3>A multiscale model of friction considering the influence of third-body wear particles</h3>
                 <p>P. Alavi, L. Rocchi, C. Leppin, J.-F. Molinari, G. Anciaux · <em>Wear</em></p>
               </div>
-              <a href="https://doi.org/10.1016/j.wear.2026.206719" target="_blank" rel="noopener noreferrer">Read paper</a>
-            </div>
+              <span class="pub-arrow" aria-hidden="true">↗</span>
+            </a>
 
-            <div class="publication-item">
+            <a class="publication-item" href="https://doi.org/10.1016/j.triboint.2025.111142" target="_blank" rel="noopener noreferrer">
               <span class="year">2026</span>
               <div>
                 <h3>Numerical modeling of rough contact interfaces with trapped compressive liquid pockets</h3>
                 <p>P. Alavi, G. Anciaux, L. Rocchi, J. Richard, J.-F. Molinari · <em>Tribology International</em></p>
               </div>
-              <a href="https://doi.org/10.1016/j.triboint.2025.111142" target="_blank" rel="noopener noreferrer">Read paper</a>
-            </div>
+              <span class="pub-arrow" aria-hidden="true">↗</span>
+            </a>
 
-            <div class="publication-item">
+            <a class="publication-item" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5761260" target="_blank" rel="noopener noreferrer">
               <span class="year">Preprint</span>
               <div>
                 <h3>Surface roughness evolution in sliding contact: coupling FFT-BEM with saturation-based plasticity</h3>
                 <p>P. Alavi, G. Anciaux, L. Rocchi, C. Leppin, J.-F. Molinari</p>
               </div>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5761260" target="_blank" rel="noopener noreferrer">View preprint</a>
-            </div>
+              <span class="pub-arrow" aria-hidden="true">↗</span>
+            </a>
 
-            <div class="publication-item">
+            <a class="publication-item" href="https://doi.org/10.1007/s41939-020-00072-4" target="_blank" rel="noopener noreferrer">
               <span class="year">2020</span>
               <div>
                 <h3>Simulation of recrystallization and martensite reversion in 304L austenitic stainless steel after multi-pass rolling</h3>
                 <p>P. Alavi, S. Serajzadeh · <em>Multiscale and Multidisciplinary Modeling, Experiments and Design</em></p>
               </div>
-              <a href="https://doi.org/10.1007/s41939-020-00072-4" target="_blank" rel="noopener noreferrer">Read paper</a>
-            </div>
+              <span class="pub-arrow" aria-hidden="true">↗</span>
+            </a>
 
-            <div class="publication-item">
+            <a class="publication-item" href="https://doi.org/10.1007/s13632-020-00623-8" target="_blank" rel="noopener noreferrer">
               <span class="year">2020</span>
               <div>
                 <h3>Microstructural Changes During Static Recrystallization of Austenitic Stainless Steel 304L: Cellular Automata Simulation</h3>
                 <p>P. Alavi, S. Serajzadeh · <em>Metallography, Microstructure, and Analysis</em></p>
               </div>
-              <a href="https://doi.org/10.1007/s13632-020-00623-8" target="_blank" rel="noopener noreferrer">Read paper</a>
-            </div>
+              <span class="pub-arrow" aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section alt">
+      <section id="skills" class="section">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Software / Skills</p>
             <h2>Tools, methods, and technical capability</h2>
           </div>
+
           <div class="skills-grid">
-            <div class="skill-panel">
+            <article class="skill-panel">
               <h3>Programming</h3>
               <ul>
                 <li>Python · NumPy · SciPy</li>
@@ -348,8 +505,9 @@
                 <li>MATLAB</li>
                 <li>Bash · Git · Linux</li>
               </ul>
-            </div>
-            <div class="skill-panel">
+            </article>
+
+            <article class="skill-panel">
               <h3>Numerical methods</h3>
               <ul>
                 <li>Finite Element Method</li>
@@ -357,8 +515,9 @@
                 <li>Discrete Element Method</li>
                 <li>Iterative & conjugate-gradient solvers</li>
               </ul>
-            </div>
-            <div class="skill-panel">
+            </article>
+
+            <article class="skill-panel">
               <h3>Engineering software</h3>
               <ul>
                 <li>Abaqus/CAE</li>
@@ -366,8 +525,9 @@
                 <li>SolidWorks</li>
                 <li>LAMMPS</li>
               </ul>
-            </div>
-            <div class="skill-panel">
+            </article>
+
+            <article class="skill-panel">
               <h3>Mechanics & materials</h3>
               <ul>
                 <li>Contact mechanics · tribology</li>
@@ -375,12 +535,12 @@
                 <li>Metal forming · microstructure</li>
                 <li>Fatigue · wear · failure analysis</li>
               </ul>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="cv" class="section">
+      <section id="cv" class="section cv-section-home alt">
         <div class="container narrow center">
           <div class="section-heading">
             <p class="eyebrow">CV</p>
@@ -390,8 +550,8 @@
             Education, research experience, technical skills, teaching, and selected publications.
           </p>
           <div class="cv-actions">
-            <a class="button primary" href="cv.html" target="_blank" rel="noopener noreferrer">View CV</a>
-            <a class="button secondary" href="cv.html#print" target="_blank" rel="noopener noreferrer">Print / Save as PDF</a>
+            <a class="button primary" href="assets/Parissa_Alavi_CV.pdf" download>Download PDF CV</a>
+            <a class="button secondary" href="cv.html" target="_blank" rel="noopener noreferrer">View web CV</a>
           </div>
         </div>
       </section>
@@ -408,7 +568,7 @@
           </p>
           <div class="contact-links">
             <a href="mailto:ParissaAlavi@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/parissaalavi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/parissa-alavi-0193b795/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/Parissa-Alavi" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
@@ -418,6 +578,7 @@
     <footer class="site-footer">
       <div class="container footer-wrap">
         <p>© <span id="year"></span> Parissa Alavi</p>
+        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
   </body>
