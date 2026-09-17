@@ -55,3 +55,8 @@ git add .
 git commit -m "Portfolio v6 cleanup and improvements"
 git push origin main
 ```
+
+
+## Contact-link update in v6.1
+- Email: `mailto:ParissaAlavi@gmail.com`
+- GitLab / TAMAAS: `https://gitlab.com/parissa_al/tamaas`
