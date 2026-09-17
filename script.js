@@ -73,26 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     reducedMotion.addEventListener("change", applyMotionPreference);
   }
 
-  const copyEmailButton = document.querySelector("#copy-email");
-
-  if (copyEmailButton) {
-    copyEmailButton.addEventListener("click", async () => {
-      const email = copyEmailButton.dataset.email;
-
-      try {
-        await navigator.clipboard.writeText(email);
-      } catch {
-        const fallback = document.createElement("textarea");
-        fallback.value = email;
-        fallback.setAttribute("readonly", "");
-        fallback.style.position = "absolute";
-        fallback.style.left = "-9999px";
-        document.body.appendChild(fallback);
-        fallback.select();
-        document.execCommand("copy");
-        document.body.removeChild(fallback);
-      }
-
       copyEmailButton.textContent = "Copied!";
       setTimeout(() => {
         copyEmailButton.textContent = "Copy email";

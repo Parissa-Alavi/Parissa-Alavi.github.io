@@ -67,3 +67,9 @@ The contact Email button now opens a Gmail compose window directly:
 `https://mail.google.com/mail/?view=cm&fs=1&to=ParissaAlavi@gmail.com`
 
 A `Copy email` fallback button is also included.
+
+
+## Contact cleanup in v6.3
+Removed the boxed `Copy email` button. The contact section now keeps only:
+- the Email button
+- the visible email address underneath
