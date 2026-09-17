@@ -100,3 +100,5 @@ When updating media, keep the filenames or update the corresponding paths in `in
 - `assets/microstructure_modeling.webp` — FE–cellular automata–neural network project preview.
 
 - `assets/parissa-portrait.webp` — hero portrait image.
+
+- `assets/microstructure_modeling.webp` now uses the comparison figure showing predicted vs. experimental microstructures for different rolling passes after annealing.
