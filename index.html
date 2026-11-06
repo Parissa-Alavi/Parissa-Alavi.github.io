@@ -99,10 +99,10 @@
           <div class="hero-copy">
             <p class="eyebrow">Mechanical & Materials Engineer · PhD, EPFL</p>
             <h1>Parissa Alavi</h1>
-            <h2>Computational Mechanics · Experimental Materials Research · Scientific Computing</h2>
+            <h2>Computational Mechanics · Experimental Materials · Scientific Computing</h2>
             <p class="lead">
-              I develop physics-based simulation tools that connect mechanics, materials, experiments,
-              and data, from microstructure evolution to industrial metal-forming processes.
+              I combine experimental materials research with physics-based modelling and scientific computing,
+              from mechanical testing and microstructural characterization to predictive tools for industrial metal forming.
             </p>
 
             <div class="cta-group">
@@ -115,6 +115,7 @@
               <li>FEM · BEM · DEM</li>
               <li>Tribology & contact mechanics</li>
               <li>Computational materials</li>
+              <li>Experimental characterization</li>
               <li>Python & C++</li>
             </ul>
           </div>
@@ -133,7 +134,7 @@
             <div class="card-content">
               <h3>From physics to predictive tools</h3>
               <p>
-                My work connects physical modelling, custom numerical methods, experiments,
+                My work combines hands-on experimental materials research, physical modelling, custom numerical methods,
                 and industrial engineering needs. My PhD at EPFL was conducted in collaboration
                 with Novelis Switzerland.
               </p>
@@ -159,11 +160,13 @@
                 During my doctoral work with Novelis Switzerland, I developed and validated multiscale
                 models for friction, lubrication, surface evolution, and third-body wear in aluminium
                 sheet-metal forming. I combined Boundary Element, Discrete Element, and Finite Element
-                methods with experimental surface data and custom scientific software.
+                methods with measured friction and surface data, quantitative experimental comparisons,
+                and custom scientific software.
               </p>
               <p>
-                My earlier materials research combined hands-on tensile testing, heat treatment, and microstructural characterization
-                with finite elements, cellular automata, and neural networks to predict microstructure evolution in stainless steel. I am especially
+                My earlier materials research included cold rolling, heat treatment, tensile and hardness testing,
+                optical metallography, XRD, and Feritscope characterization of stainless steel.
+                I also combined finite elements, cellular automata, and neural networks to predict microstructure evolution. I am especially
                 interested in advanced modelling, scientific software, and AI-assisted engineering workflows.
               </p>
             </div>
@@ -410,57 +413,54 @@
         </div>
       </section>
 
-
-      <section id="experimental" class="section experimental-section">
+      <!-- Added section: original projects, imagery, and structure above remain intact. -->
+      <section id="experimental" class="section">
         <div class="container">
           <div class="section-heading section-heading-wide">
             <div>
               <p class="eyebrow">Experimental research</p>
-              <h2>From measurements to physical understanding</h2>
+              <h2>From mechanical testing to physical insight</h2>
             </div>
-            <p>Experimental materials research is a substantive part of my background—not simply a final validation step for simulations.</p>
+            <p>My research spans experiments and simulation: preparing and characterizing materials, interpreting measured response, and validating physics-based models against observations.</p>
           </div>
-          <div class="experimental-grid">
-            <article class="experimental-card">
-              <p class="project-tag">Tribology · EPFL / Novelis</p>
-              <h3>Friction testing and surface characterization</h3>
-              <p>Interpreted industrial strip-draw tribology results and measured surface topographies to examine how normal pressure, lubrication, and roughness evolution affect aluminium sheet-forming friction.</p>
-              <ul>
-                <li>Analysis of friction measurements and test conditions</li>
-                <li>Comparison of surface topography before and after sliding</li>
-                <li>Experiment–simulation comparison and parameter calibration</li>
-              </ul>
-              <p class="experimental-note">Role: experimental-data analysis and physical interpretation in an industrial research collaboration.</p>
-              <a class="project-link" href="assets/comparision_exp_surf.pdf" target="_blank" rel="noopener noreferrer">View surface comparison <span aria-hidden="true">↗</span></a>
-            </article>
-            <article class="experimental-card">
-              <p class="project-tag">Materials characterization · 304L stainless steel</p>
-              <h3>Mechanical testing and microstructure</h3>
-              <p>Performed tensile testing, heat treatments, and materials characterization during research on deformation, recrystallization, and phase evolution in stainless steel.</p>
-              <ul>
-                <li>Tensile testing and heat-treatment experiments</li>
-                <li>Metallography, hardness and microstructure analysis</li>
-                <li>Characterization results including XRD and Feritscope data</li>
-              </ul>
-              <p class="experimental-note">Role: hands-on experimental work and interpretation alongside computational modelling.</p>
-              <div class="experimental-figures" aria-label="Published experimental figures from Alavi and Serajzadeh (2020)">
-                <figure>
-                  <img src="assets/stainless_micrographs_fig4.webp" alt="Optical micrographs of annealed and five-pass cold-rolled 304L stainless steel, Figure 4 from Alavi and Serajzadeh 2020" loading="lazy" />
-                  <figcaption>Experimental metallography: annealed versus cold-rolled microstructure (Fig. 4).</figcaption>
-                </figure>
-                <figure>
-                  <img src="assets/stainless_tensile_fig6.webp" alt="Measured tensile stress-strain curves for 304L steel after different cold-rolling passes and temperatures, Figure 6 from Alavi and Serajzadeh 2020" loading="lazy" />
-                  <figcaption>Experimental stress–strain curves after different rolling passes (Fig. 6).</figcaption>
-                </figure>
-                <figure>
-                  <img src="assets/stainless_microstructure_validation_fig16.webp" alt="Measured optical microstructures compared with predicted recrystallized microstructures, Figure 16 from Alavi and Serajzadeh 2020" loading="lazy" />
-                  <figcaption>Experimental microstructures compared with simulations (Fig. 16).</figcaption>
-                </figure>
+          <div class="project-grid experimental-showcase">
+            <article class="project-card">
+              <div class="project-figure figure-light"><img src="assets/stainless_micrographs_fig4.webp" loading="lazy" alt="My published optical micrographs of annealed and multi-pass rolled 304L stainless steel (Fig. 4)" /></div>
+              <div class="project-body">
+                <p class="project-tag">Experimental metallurgy · Characterization</p>
+                <h3>Cold rolling, heat treatment &amp; microstructure</h3>
+                <p>Investigated how deformation and annealing change 304L stainless-steel microstructure, using experimental metallography, XRD and Feritscope measurements to follow grain structure and martensite evolution.</p>
+                <ul>
+                  <li>Room-temperature and sub-zero rolling, followed by controlled annealing</li>
+                  <li>Optical metallography and quantitative grain-size analysis</li>
+                  <li>Experimental phase identification and martensite-fraction measurements</li>
+                </ul>
+                <p class="experimental-caption">My published Fig. 4: experimental optical microstructures before and after rolling.</p>
+                <div class="project-actions"><a class="project-link" href="https://doi.org/10.1007/s41939-020-00072-4" target="_blank" rel="noopener noreferrer">Read research paper <span aria-hidden="true">↗</span></a></div>
               </div>
-              <p class="experimental-source">Figures reproduced from P. Alavi &amp; S. Serajzadeh, <em>Multiscale and Multidisciplinary Modeling, Experiments and Design</em> (2020), <a href="https://doi.org/10.1007/s41939-020-00072-4" target="_blank" rel="noopener noreferrer">published paper</a>. © Springer Nature Switzerland AG 2020.</p>
-              <a class="project-link" href="assets/microstructure_modeling.webp" target="_blank" rel="noopener noreferrer">View existing microstructure comparison <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-figure figure-light"><img src="assets/stainless_tensile_fig6.webp" loading="lazy" alt="My published experimental tensile stress-strain curves for rolled stainless steel at two deformation temperatures (Fig. 6)" /></div>
+              <div class="project-body">
+                <p class="project-tag">Mechanical testing · Experiment–model comparison</p>
+                <h3>Tensile response, hardness &amp; model validation</h3>
+                <p>Characterized the mechanical response of rolled and annealed 304L steel through tensile and Vickers hardness testing, using measured properties and microstructures to inform and validate predictive models.</p>
+                <ul>
+                  <li>Stress–strain curves and yield-strength changes after rolling</li>
+                  <li>Hardness and thermomechanical-processing comparisons</li>
+                  <li>Validation of microstructural predictions against measurements</li>
+                </ul>
+                <p class="experimental-caption">My published Fig. 6: measured stress–strain curves after different rolling passes.</p>
+                <div class="project-actions"><a class="project-link" href="assets/stainless_microstructure_validation_fig16.webp" target="_blank" rel="noopener noreferrer">See experimental–model comparison <span aria-hidden="true">↗</span></a></div>
+              </div>
             </article>
           </div>
+          <div class="experimental-bridge">
+            <h3>Tribology and surface metrology</h3>
+            <p>My EPFL–Novelis doctoral research linked industrial strip-draw friction experiments, rough-surface measurements and plastic surface evolution with multiscale contact and wear models. The experimental comparisons are also visible in the existing rough-contact and surface-evolution project cards above.</p>
+            <a class="project-link" href="#projects">View original tribology projects <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="experimental-source">Figures 4 and 6 from P. Alavi and S. Serajzadeh, <em>Multiscale and Multidisciplinary Modeling, Experiments and Design</em> (2020), DOI: 10.1007/s41939-020-00072-4. © Springer Nature Switzerland AG 2020. Figure reuse may require publisher permission.</p>
         </div>
       </section>
 
@@ -622,7 +622,6 @@
                 <li>Plasticity · nonlinear mechanics</li>
                 <li>Metal forming · microstructure</li>
                 <li>Fatigue · wear · failure analysis</li>
-                <li>Mechanical testing · surface characterization</li>
               </ul>
             </article>
           </div>
@@ -652,7 +651,7 @@
             <h2>Let’s connect</h2>
           </div>
           <p class="lead centered-lead">
-            I am interested in advanced R&D, computational mechanics, materials modelling,
+            I am interested in advanced R&D, computational mechanics, experimental materials characterization,
             scientific software, and multidisciplinary engineering opportunities.
           </p>
           <div class="contact-links">

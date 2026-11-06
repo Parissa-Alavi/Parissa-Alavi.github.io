@@ -623,16 +623,6 @@ a {
   margin-top: 0.8rem;
 }
 
-/* Experimental work: intentionally distinct from software project cards */
-.experimental-section { background: rgba(8, 14, 25, 0.32); }
-.experimental-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-.experimental-card { padding: 1.7rem; border-radius: var(--radius); border: 1px solid var(--card-border); background: var(--card); box-shadow: var(--shadow); }
-.experimental-card h3 { font-size: 1.35rem; line-height: 1.28; margin: 0 0 0.75rem; }
-.experimental-card p, .experimental-card li { color: var(--muted); }
-.experimental-card ul { margin: 1rem 0; padding-left: 1.2rem; }
-.experimental-note { font-size: 0.87rem; font-style: italic; margin: 0.8rem 0 1.1rem; }
-@media (max-width: 800px) { .experimental-grid { grid-template-columns: 1fr; } }
-
 .experience-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
@@ -984,13 +974,11 @@ a {
   border-color: var(--text);
 }
 
-/* Published user-authored experimental figures */
-.experimental-figures {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.2rem 0;}
-.experimental-figures figure {margin:0;background:#fff;border-radius:12px;overflow:hidden;}
-.experimental-figures figure:last-child {grid-column:1/-1;}
-.experimental-figures img {width:100%;height:190px;object-fit:contain;display:block;padding:8px;}
-.experimental-figures figure:last-child img {height:220px;}
-.experimental-figures figcaption {font-size:.8rem;color:#273849;padding:8px 12px 12px;line-height:1.35;}
-.experimental-source {font-size:.77rem;color:var(--muted);line-height:1.5;}
-.experimental-source a {color:var(--primary);text-decoration:underline;}
-@media (max-width:680px) {.experimental-figures{grid-template-columns:1fr}.experimental-figures figure:last-child{grid-column:auto}}
+/* New experimental section; original style rules are preserved. */
+.experimental-showcase .project-figure {background:#fff;}
+.experimental-showcase .project-figure img {object-fit:contain;padding:10px;}
+.experimental-caption {font-size:.79rem;color:var(--muted);margin-top:1rem;}
+.experimental-bridge {margin-top:1.5rem;padding:1.5rem;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);}
+.experimental-bridge h3 {margin:0 0 .6rem;}
+.experimental-bridge p {color:var(--muted);margin:0 0 .8rem;}
+.experimental-source {font-size:.78rem;color:var(--subtle);margin-top:1.4rem;}
