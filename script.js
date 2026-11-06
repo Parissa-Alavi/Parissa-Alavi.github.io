@@ -73,11 +73,5 @@ document.addEventListener("DOMContentLoaded", () => {
     reducedMotion.addEventListener("change", applyMotionPreference);
   }
 
-      copyEmailButton.textContent = "Copied!";
-      setTimeout(() => {
-        copyEmailButton.textContent = "Copy email";
-      }, 1600);
-    });
-  }
 
 });
